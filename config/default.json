@@ -1,0 +1,49 @@
+{
+  "mysql": {
+    "port": 3306,
+    "host": "mysql-private.gwn.cloud",
+    "user": "admin",
+    "password": "admin",
+    "pool":{
+      "max": 10,
+      "min": 0,
+      "idle": 10000
+    },
+    "operatorsAliases":false
+  },
+  "cpus":4,
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "database":{
+   "gwn":{
+     "user":"admin",
+     "password":"admin"
+   },
+    "gwn_statistics":{
+      "user":"admin",
+      "password":"admin"
+    }
+  },
+  "redis":{
+    "host": "redis-private.gwn.cloud",
+    "port":"6379"
+  },
+  "ports":{
+    "tcp":13,
+    "http":8082
+  },
+  "domain":{
+    "portalDomain":"https://api.gwn.cloud"
+  },
+  "influxDb":{
+    "host":"mysql-private.gwn.cloud",
+    "port":"8086",
+    "user":"root",
+    "password":"",
+    "MEASUREMENT":"statistics_",
+    "EVENT_MEASUREMENT":"event_log",
+    "AP_MEASUREMENT":"ap_history_"
+  }
+}
